@@ -139,6 +139,7 @@ main{
 
 .card__info{
     width: 35%;
+    padding: 45px 30px;
 }
 
 .card__model{
@@ -187,3 +188,145 @@ main{
 .card__preview:hover{
     opacity: 1;
 }
+
+.card__badge{
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    background-color: #ffa60d;
+    color: #fff;
+    padding: 7px;
+}
+
+.cart__title{
+    font-size: 1.9rem;
+}
+
+.cart__title a {
+    color: #5e4fff;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 400;
+}
+
+.cart__title a:hover,
+.cart__title a:active, 
+.cart__title a:focus {
+    color: #a200b8;
+
+}
+.card__subtitle{
+    vertical-align: middle;
+    margin: 0;
+}
+
+.stars{
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.star{
+    display: inline-block;
+    /* outline: 1px solid red; */
+    width: 12px;
+    height: 12px;
+    background-image: url(../img/star.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+[data-stars="0"] .star:nth-child(n+1),
+[data-stars="1"] .star:nth-child(n+2),
+[data-stars="2"] .star:nth-child(n+3),
+[data-stars="3"] .star:nth-child(n+4),
+[data-stars="4"] .star:nth-child(n+5){
+    opacity: .4;
+}
+
+.cart__prise{
+    font-size: 1.8rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    margin: 20px 0;
+}
+.cart__prise::before{
+    content: '$';
+    margin-right: .3em;
+}
+    
+
+[data-currency="usd"] .cart__prise::before{
+    content: '$'}
+[data-currency="uah"] .cart__prise::before{
+    content: '₴'}
+
+.sizes__list{
+    padding: 0;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.sizes__list::after{
+    content: '';
+    flex: auto;
+}
+.sizes__item{
+    display: inline-block;
+}
+
+.sizes__link{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border: 1px solid transparent;
+    text-align: center;
+    line-height: 24px;
+    font-size: 1.3rem;
+    color: #000;
+}
+
+.sizes__link:hover,
+.sizes__link:active,
+.sizes__link:focus,    
+.sizes__link--active{
+    border-color: #000;
+}
+
+.card__buttons{
+    margin: 30px 0;
+    display: inline-block;
+}
+
+.btn{
+    text-transform: uppercase;
+    color: #000;
+    font-size: 1rem;
+    padding: 10px 25px;
+    display: block;
+    border: 1px solid #000;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.btn:hover,
+.btn:active,
+.btn:focus{
+    background: #000;
+    color: #fff;
+}
+
+.btn--accent{
+    background-color: #a200b8;
+    border-color: #a200b8;
+    color: #fff;
+}
+
+.btn--accent:active,
+.btn--accent:focus,
+.btn--accent:hover{
+    color: #a200b8;
+    background-color: #fff;
+}
+
