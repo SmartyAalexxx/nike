@@ -1,7 +1,7 @@
-let size = document.getElementsByClassName("sizeslink");
-//console.log(size);
-let img = document.querySelector(".cardimg");
-// console.log(img);
+let size = document.getElementsByClassName("sizes__link");
+console.log(size);
+let img = document.querySelector(".card__img");
+console.log(img);
 
     for(let sizeitem of size){
         sizeitem.addEventListener("click", function(){
